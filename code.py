@@ -11,6 +11,10 @@ def intro():
    
 def run_shell():
     shell = input(">")
+    if shell == help:
+        print("What do you want help with")
+        print("1.how to use python")
+        print("2.")
     exec(shell)
     #run code from the shell var
   
