@@ -1,9 +1,6 @@
-def setup():
-    import time
-#import things
+
 def intro():
     print("what is your name")
-    time.sleep(2)
     name = input("name>")
     print(f"Hi",name) 
     print("Welcome to easy shell")
@@ -14,5 +11,15 @@ def start_shell():
     #get input 
 def run_shell():
     exec(shell)
+    exec_code()
+    #run code from the shell var
+  
+def run_all():
+    intro()
+    start_shell()
+    run_shell()
+run_all()            
+
+   
         
 
