@@ -8,19 +8,19 @@ def intro():
     print("Welcome to easy shell")
     print("If you need help type help in the shell")
     #inform
+intro()
         
 while True:   
     def run_shell():
         shell = input(">")
-        if shell == help:
+        if shell == "help":
 
-                print("check https://www.w3schools.com/python/ for a good learning path")
+            print("check https://www.w3schools.com/python/ for a good learning path")
         else:    
             exec(shell)
             #run code from the shell var
     
     def run_all():
-        intro()
         run_shell()
     run_all()            
 
